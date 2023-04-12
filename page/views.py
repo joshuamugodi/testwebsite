@@ -8,7 +8,9 @@ def home(request):
     template = loader.get_template("home.html")
     return HttpResponse(template.render())
 def login_page(request):
-    template = loader.get_template("./login_page.html", {"form": form})
+    form = LogIn_Form()
+    B = {"form": form}
+    template = loader.get_template("./login_page.html",B)
     return HttpResponse(template.render())
 def login(request):
     form = LogIn_Form()

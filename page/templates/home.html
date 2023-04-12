@@ -4,16 +4,18 @@
 {% endblock%}
 {% block body %}
   {% include "./nav.html" %}
-    <div>
-      <div class="" >
-        <h1> hello world </h1>
-        <!-- <h2>this the data of my applications</h2> -->
-      </div>
+    <center>
       <div>
-        <form action="./login_page/" method="post" >
-          <button type="submit", name="login" > login </button>
-        </form>
-
-      </div> 
-    </div> 
+        <div class="" >
+          <h1> hello world </h1>
+          <h2>this the data of my applications</h2>
+        </div>
+        <div>
+          <form action="/login_page/" method="get" >
+            <button type="submit" > login </button>
+          </form>
+  
+        </div> 
+      </div>
+    </center> 
 {% endblock %}
